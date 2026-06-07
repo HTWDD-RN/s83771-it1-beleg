@@ -24,3 +24,5 @@ PWA hätte ich als letzten Schritt machen sollen. Bei mir hatte ich ständig das
 Am Ende habe ich noch die Speicherung der Highscores umgesetzt, PHP war mir gar nicht vertraut, aber SQL dafür umso besser. Insgesamt nach dem Verstehen der Architektur nur Probleme mit Zugriffsrechten und der Erstellung eines ansprechenden Designs. ChatGPT schlug mir hier einzelne Karten vor, was ich dann so umgesetzt habe. 
 
 Im Test sind mir noch zu kleine Elemente für Mobilgeräte und kleinere Design-Anpassungen aufgefallen, aber nichts Großes mehr.
+## Vorschläge zur Verbesserung
+Ich habe nur sehr wenigs bis gar nichts anzumerken, Infos zum Quiz und was laut Cors geht und was nicht, hätte mir durchaus weitergeholfen, aber ansonsten war ich sehr zufrieden mit diesem Beleg. Ich denke PWA und Responsives Design sollten am Ende gemacht werden, das erleichtert es einem ungemein.
