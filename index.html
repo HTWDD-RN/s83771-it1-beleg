@@ -1,0 +1,167 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/x-icon" href="IconOhneHintergrund.png" />
+    <meta name="theme-color" content="#facc15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lernprogramm</title>
+  </head>
+  <body>
+    <main>
+      <section id="startseite" class="start-card" hidden>
+        <img
+          src="IconOhneHintergrund.png"
+          class="logo"
+          alt="Lernprogramm Logo"
+        />
+        <h1>Willkommen zum Lernprogramm!</h1>
+        <p>Wähle eine Kategorie, um zu starten:</p>
+        <nav>
+          <div>
+            <button onclick="starteKategorie('Web')" class="kategorie-button">
+              Web
+            </button>
+          </div>
+          <div>
+            <button onclick="starteKategorie('Mathe')" class="kategorie-button">
+              Mathe
+            </button>
+          </div>
+          <div>
+            <button
+              onclick="starteKategorie('Allgemein')"
+              class="kategorie-button"
+            >
+              Allgemein
+            </button>
+            <button
+              onclick="zeigeAnsicht('serverLoginseite')"
+              class="kategorie-button"
+            >
+              Externe Quizzes (offline nicht möglich)
+            </button>
+          </div>
+        </nav>
+      </section>
+
+      <section id="quizseite" class="app-card quiz-card" hidden>
+        <div class="progress-container">
+          <div id="fragenFortschritt" class="progress-fill"></div>
+        </div>
+        <h1 id="ueberschrift"></h1>
+        <p id="fortschrittText"></p>
+        <div id="frage"></div>
+        <div id="antworten"></div>
+        <div class="quiz-actions">
+          <button id="fragePruefen" onclick="pruefeAntwort()">
+            Antwort überprüfen
+          </button>
+          <button id="abbrechen" onclick="abbrechen()">Abbrechen</button>
+        </div>
+      </section>
+
+      <section id="statistikseite" class="start-card" hidden>
+        <img
+          src="IconOhneHintergrund.png"
+          class="logo"
+          alt="Lernprogramm Logo"
+        />
+        <div id="statistik" class="statistik-box"></div>
+
+        <div class="highscore-form">
+          <input id="spielerName" placeholder="Name für Highscore" />
+          <button
+            id="highscoreSpeichern"
+            onclick="speichereHighscore()"
+            class="kategorie-button"
+          >
+            Highscore speichern
+          </button>
+        </div>
+
+        <div id="highscoreMeldung" class="meldung"></div>
+
+        <section class="highscore-bereich">
+          <h2>Highscores</h2>
+          <div id="highscoreListe"></div>
+        </section>
+        <button onclick="zeigeStartseite()" class="kategorie-button">
+          Zurück zur Startseite
+        </button>
+        <button onclick="starteDurchlauf()" class="kategorie-button">
+          Erneut versuchen
+        </button>
+      </section>
+
+      <section id="serverAuswahlseite" class="app-card" hidden>
+        <h1>Server-Quiz auswählen</h1>
+        <div id="serverQuizAnzeige"></div>
+        <div class="server-navigation">
+          <button
+            id="vorherigeSeite"
+            class="secondary-button"
+            onclick="vorherigeServerSeite()"
+          >
+            ← Zurück
+          </button>
+          <button
+            id="naechsteSeite"
+            class="secondary-button"
+            onclick="naechsteServerSeite()"
+          >
+            Weiter →
+          </button>
+        </div>
+        <button id="abbrechenServerSeite" onclick="zeigeStartseite()">
+          Abbrechen
+        </button>
+      </section>
+
+      <section id="serverLoginseite" class="app-card" hidden>
+        <h1>Server-Quiz</h1>
+        <p>Melde dich an oder registriere einen neuen Account.</p>
+        <input id="user" type="email" placeholder="E-Mail" />
+        <input id="passwort" type="password" placeholder="Passwort" />
+        <button onclick="starteServerAuswahl()" class="kategorie-button">
+          Anmelden
+        </button>
+        <p id="serverMeldung"></p>
+        <button onclick="zeigeStartseite()" class="kategorie-button">
+          Zurück
+        </button>
+      </section>
+
+      <section id="quizseiteServer" class="app-card quiz-card" hidden>
+        <h1 id="ueberschriftServer"></h1>
+        <p id="fortschrittTextServer"></p>
+        <div id="frageServer"></div>
+        <div id="antwortenServer"></div>
+        <div id="feedbackServer"></div>
+        <div class="quiz-actions">
+          <button id="fragePruefenServer" onclick="pruefeServerAntwort()">
+            Antwort überprüfen
+          </button>
+          <button id="abbrechenServer" onclick="zurueckZurServerAuswahl()">
+            Abbrechen
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="javaScript.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+    ></script>
+  </body>
+</html>

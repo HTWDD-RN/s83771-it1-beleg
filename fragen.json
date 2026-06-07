@@ -1,0 +1,642 @@
+{
+"titel":"Fragen",
+"beschreibung":"Hier werden Fragen gesammelt, die in der Abgabe beantwortet werden müssen.",
+"kategorien":[
+    {
+    "kategorie":"Web",
+    "fragen":[
+        {
+        "frage":"Was ist die Hauptfunktion von HTML?", 
+        "antworten": [
+            {
+                "text":"Es ist da um die Struktur und den Inhalt von Webseiten zu definieren",
+                "richtig": true
+            },
+            { 
+                "text":"Es ist eine Programmiersprache",
+                "richtig": false
+            },
+            { 
+                "text":"Es wird verwendet, um Datenbanken zu verwalten",
+                "richtig": false
+            },
+            { 
+                "text":"Es ist ein Betriebssystem",
+                "richtig": false
+            }]
+        },
+        {
+        "frage":"Was ist CSS und wofür wird es verwendet?",
+        "antworten": [
+            {
+                "text":"CSS steht für Cascading Style Sheets und wird verwendet, um das Aussehen von Webseiten zu gestalten",
+                "richtig": true
+            },
+            {
+                "text":"CSS ist eine Programmiersprache",
+                "richtig": false
+            },
+            {
+                "text":"CSS wird verwendet, um Datenbanken zu verwalten",
+                "richtig": false
+            },
+            {
+                "text":"CSS ist ein Betriebssystem",
+                "richtig": false
+            }
+        ]
+        },
+        {
+            "frage":"Welche Aussagen treffen auf HTTP zu?",
+            "antworten":[
+                {
+                    "text":"HTTP ist ein Anwendungsprotokoll",
+                    "richtig": true
+                },
+                {
+                    "text":"HTTP nutzt häufig TCP als Transportprotokoll",
+                    "richtig": true
+                },
+                {
+                    "text":"HTTP wird für Webseiten verwendet",
+                    "richtig": true
+                },
+                {
+                    "text":"HTTP ersetzt DNS",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche Technologien gehören typischerweise zur Frontend-Entwicklung?",
+            "antworten":[
+                {
+                    "text":"HTML",
+                    "richtig": true
+                },
+                {
+                    "text":"CSS",
+                    "richtig": true
+                },
+                {
+                    "text":"JavaScript",
+                    "richtig": true
+                },
+                {
+                    "text":"SQLite",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche HTTP-Methoden verändern typischerweise Daten auf dem Server?",
+            "antworten":[
+                {
+                    "text":"POST",
+                    "richtig": true
+                },
+                {
+                    "text":"PUT",
+                    "richtig": true
+                },
+                {
+                    "text":"DELETE",
+                    "richtig": true
+                },
+                {
+                    "text":"GET",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche Aufgaben kann ein Service Worker übernehmen?",
+            "antworten":[
+                {
+                    "text":"Offline-Caching",
+                    "richtig": true
+                },
+                {
+                    "text":"Abfangen von Requests",
+                    "richtig": true
+                },
+                {
+                    "text":"Push-Benachrichtigungen",
+                    "richtig": true
+                },
+                {
+                    "text":"Ausführen von SQL-Abfragen im Browser",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Wofür steht HTTP?",
+            "antworten":[
+                {
+                    "text":"Hypertext Transfer Protocol",
+                    "richtig": true
+                },
+                {
+                    "text":"High Transfer Text Process",
+                    "richtig": false
+                },
+                {
+                    "text":"Hyperlink Transmission Program",
+                    "richtig": false
+                },
+                {
+                    "text":"Host Transfer Protocol",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welches HTML-Element erzeugt einen Hyperlink?",
+            "antworten":[
+                {
+                    "text":"<a>",
+                    "richtig": true
+                },
+                {
+                    "text":"<link>",
+                    "richtig": false
+                },
+                {
+                    "text":"<href>",
+                    "richtig": false
+                },
+                {
+                    "text":"<url>",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche Datei beschreibt eine Progressive Web App?",
+            "antworten":[
+                {
+                    "text":"manifest.json",
+                    "richtig": true
+                },
+                {
+                    "text":"package.json",
+                    "richtig": false
+                },
+                {
+                    "text":"config.xml",
+                    "richtig": false
+                },
+                {
+                    "text":"service.json",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche Aussagen zu responsivem Webdesign sind richtig?",
+            "antworten":[
+                {
+                    "text":"Es passt Webseiten an verschiedene Bildschirmgrößen an",
+                    "richtig": true
+                },
+                {
+                    "text":"Es verbessert die Nutzbarkeit auf Smartphones",
+                    "richtig": true
+                },
+                {
+                    "text":"Media Queries werden häufig dafür verwendet",
+                    "richtig": true
+                },
+                {
+                    "text":"Es benötigt zwingend Java",
+                    "richtig": false
+                }
+            ]
+        }]
+    },
+    {
+    "kategorie":"Mathe", 
+    "fragen":[
+        {
+        "frage":"Was ist die Ableitung von $f(x)=3x^2+2x+1$?", 
+        "antworten": [
+            {
+                "text":"$f'(x)=6x+2$",
+                "richtig": true
+            },
+            {
+                "text":"$f'(x)=3x^2$",
+                "richtig": false
+            },
+            {
+                "text":"$f'(x)=2x+1$",
+                "richtig": false
+            },
+            {
+                "text":"$f'(x)=0$",
+                "richtig": false
+            }
+        ]},
+        {
+        "frage":"Was ist die Integralrechnung?", 
+        "antworten": [
+            {
+                "text":"Ein Teilgebiet der Mathematik, das sich mit der Berechnung von Flächen und Volumen beschäftigt und die Umkehrung der Ableitung darstellt",
+                "richtig": true
+            },
+            {
+                "text":"Ein Verfahren zur Lösung von Gleichungen",
+                "richtig": false
+            },
+            {
+                "text":"Ein Algorithmus zur Datenanalyse",
+                "richtig": false
+            },
+            {
+                "text":"Ein Konzept in der Informatik",
+                "richtig": false
+            }
+        ]
+        },
+        {
+            "frage":"Welche Zahlen sind Primzahlen?",
+            "antworten":[
+                {
+                    "text":"2",
+                    "richtig": true
+                },
+                {
+                    "text":"3",
+                    "richtig": true
+                },
+                {
+                    "text":"5",
+                    "richtig": true
+                },
+                {
+                    "text":"9",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche Aussagen über Ableitungen sind richtig?",
+            "antworten":[
+                {
+                    "text":"Sie beschreiben Änderungsraten",
+                    "richtig": true
+                },
+                {
+                    "text":"Sie können Steigungen angeben",
+                    "richtig": true
+                },
+                {
+                    "text":"Sie sind die Umkehrung der Integration",
+                    "richtig": false
+                },
+                {
+                    "text":"Konstanten haben die Ableitung 0",
+                    "richtig": true
+                }
+            ]
+        },
+        {
+            "frage":"Welche Formeln beschreiben Flächen?",
+            "antworten":[
+                {
+                    "text":"A = a · b",
+                    "richtig": true
+                },
+                {
+                    "text":"A = π · r²",
+                    "richtig": true
+                },
+                {
+                    "text":"V = a³",
+                    "richtig": false
+                },
+                {
+                    "text":"A = (g · h) / 2",
+                    "richtig": true
+                }
+            ]
+        },
+        {
+            "frage":"Welche Zahlen sind Lösungen von x² = 16?",
+            "antworten":[
+                {
+                    "text":"4",
+                    "richtig": true
+                },
+                {
+                    "text":"-4",
+                    "richtig": true
+                },
+                {
+                    "text":"8",
+                    "richtig": false
+                },
+                {
+                    "text":"-8",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Wie viele Grad hat ein rechter Winkel?",
+            "antworten":[
+                {
+                    "text":"90°",
+                    "richtig": true
+                },
+                {
+                    "text":"45°",
+                    "richtig": false
+                },
+                {
+                    "text":"180°",
+                    "richtig": false
+                },
+                {
+                    "text":"360°",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Was ergibt 2³?",
+            "antworten":[
+                {
+                    "text":"8",
+                    "richtig": true
+                },
+                {
+                    "text":"6",
+                    "richtig": false
+                },
+                {
+                    "text":"9",
+                    "richtig": false
+                },
+                {
+                    "text":"12",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche Aussagen über Dreiecke sind richtig?",
+            "antworten":[
+                {
+                    "text":"Ein Dreieck hat drei Seiten",
+                    "richtig": true
+                },
+                {
+                    "text":"Die Winkelsumme beträgt 180°",
+                    "richtig": true
+                },
+                {
+                    "text":"Ein Dreieck hat immer vier Ecken",
+                    "richtig": false
+                },
+                {
+                    "text":"Gleichseitige Dreiecke haben drei gleich lange Seiten",
+                    "richtig": true
+                }
+            ]
+        },
+        {
+            "frage":"Welche mathematischen Konstanten sind weit verbreitet?",
+            "antworten":[
+                {
+                    "text":"π",
+                    "richtig": true
+                },
+                {
+                    "text":"e",
+                    "richtig": true
+                },
+                {
+                    "text":"φ",
+                    "richtig": true
+                },
+                {
+                    "text":"TCP",
+                    "richtig": false
+                }
+            ]
+        }]
+    },
+    {
+    "kategorie":"Allgemein", 
+    "fragen":[
+        {
+        "frage":"Was ist die Hauptstadt von Deutschland?", 
+        "antworten": [{
+                "text":"Berlin",
+                "richtig": true
+            },
+            {
+                "text":"München",
+                "richtig": false
+            },
+            {
+                "text":"Hamburg",
+                "richtig": false
+            },
+            {
+                "text":"Frankfurt",
+                "richtig": false
+            }]
+        },
+        {
+        "frage":"Wer war der erste Mensch auf dem Mond?", 
+        "antworten": [
+            {
+                "text":"Neil Armstrong",
+                "richtig": true
+            },
+            {
+                "text":"Buzz Aldrin",
+                "richtig": false
+            },
+            {
+                "text":"Yuri Gagarin",
+                "richtig": false
+            },
+            {
+                "text":"Michael Collins",
+                "richtig": false
+            }
+        ]
+        },
+        {
+            "frage":"Welche Länder gehören zur Europäischen Union?",
+            "antworten":[
+                {
+                    "text":"Deutschland",
+                    "richtig": true
+                },
+                {
+                    "text":"Frankreich",
+                    "richtig": true
+                },
+                {
+                    "text":"Italien",
+                    "richtig": true
+                },
+                {
+                    "text":"Norwegen",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche sind Programmiersprachen?",
+            "antworten":[
+                {
+                    "text":"Java",
+                    "richtig": true
+                },
+                {
+                    "text":"Python",
+                    "richtig": true
+                },
+                {
+                    "text":"JavaScript",
+                    "richtig": true
+                },
+                {
+                    "text":"HTML",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche Tiere sind Säugetiere?",
+            "antworten":[
+                {
+                    "text":"Wal",
+                    "richtig": true
+                },
+                {
+                    "text":"Fledermaus",
+                    "richtig": true
+                },
+                {
+                    "text":"Delfin",
+                    "richtig": true
+                },
+                {
+                    "text":"Hai",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche gehören zum Sonnensystem?",
+            "antworten":[
+                {
+                    "text":"Mars",
+                    "richtig": true
+                },
+                {
+                    "text":"Jupiter",
+                    "richtig": true
+                },
+                {
+                    "text":"Venus",
+                    "richtig": true
+                },
+                {
+                    "text":"Polaris",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Wie viele Kontinente gibt es auf der Erde?",
+            "antworten":[
+                {
+                    "text":"7",
+                    "richtig": true
+                },
+                {
+                    "text":"5",
+                    "richtig": false
+                },
+                {
+                    "text":"6",
+                    "richtig": false
+                },
+                {
+                    "text":"8",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welches Element hat das chemische Symbol O?",
+            "antworten":[
+                {
+                    "text":"Sauerstoff",
+                    "richtig": true
+                },
+                {
+                    "text":"Gold",
+                    "richtig": false
+                },
+                {
+                    "text":"Osmium",
+                    "richtig": false
+                },
+                {
+                    "text":"Wasserstoff",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "frage":"Welche Aussagen über Schaltjahre sind richtig?",
+            "antworten":[
+                {
+                    "text":"Ein Schaltjahr hat 366 Tage",
+                    "richtig": true
+                },
+                {
+                    "text":"Der Februar hat dann 29 Tage",
+                    "richtig": true
+                },
+                {
+                    "text":"Jedes Jahr ist ein Schaltjahr",
+                    "richtig": false
+                },
+                {
+                    "text":"Schaltjahre gleichen Kalenderabweichungen aus",
+                    "richtig": true
+                }
+            ]
+        },
+        {
+            "frage":"Welche Personen waren Astronauten der Apollo-11-Mission?",
+            "antworten":[
+                {
+                    "text":"Neil Armstrong",
+                    "richtig": true
+                },
+                {
+                    "text":"Buzz Aldrin",
+                    "richtig": true
+                },
+                {
+                    "text":"Michael Collins",
+                    "richtig": true
+                },
+                {
+                    "text":"Yuri Gagarin",
+                    "richtig": false
+                }
+            ]
+        }]}
+]}

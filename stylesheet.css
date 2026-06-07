@@ -1,0 +1,360 @@
+
+:root {
+    --primary: #facc15;
+    --primary-light: #fef3c7;
+    --primary-dark: #ca8a04;
+    --background: #fffdf5;
+    --card: #ffffff;
+    --text: #1f2937;
+}
+
+/* feedback-richtig und feedback-falsch Klassen für Hintergrundfarben*/
+body {
+    margin: 0;
+    min-height: 100vh;
+    transition: background-color 0.4s ease;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 180px;
+    display: block;
+    margin: 2rem auto;
+}
+
+.app-card {
+    width: 100%;
+    max-width: 620px;
+    background-color: var(--card);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.start-card {
+    max-width: 600px;
+    margin: 4rem auto;
+    background: var(--card);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.08);
+}
+
+.quiz-card {
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.kategorie-button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    background: var(--primary);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.kategorie-button:hover {
+    transform: translateY(-2px);
+}
+
+body.feedback-richtig {
+    background-color: rgba(0, 180, 80, 0.25);
+}
+
+body.feedback-falsch {
+    background-color: rgba(220, 0, 0, 0.25);
+}
+
+
+progress::-webkit-progress-value {
+    background: #facc15;
+}
+
+.progress-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: var(--primary-light);
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--primary);
+    transition: width 0.25s ease;
+}
+
+#frage {
+    margin: 1.5rem 0;
+    padding: 1.2rem;
+    background: var(--primary-light);
+    border-radius: 16px;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+
+/* Styling für Antwortoptionen, mit speziellen Klassen für richtig und falsch */
+.antwort-option {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    margin: 0.7rem 0;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+    cursor: pointer;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.antwort-option input[type="checkbox"] {
+    accent-color: var(--primary);
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+}
+
+.antwort-option:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary);
+}
+
+.antwort-option.antwort-richtig {
+    background-color: #c8f7c5;
+    border-color: green;
+}
+
+.antwort-option.antwort-falsch {
+    background-color: #f8c5c5;
+    border-color: red;
+}
+
+.quiz-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#fragePruefen {
+    padding: 0.9rem 1.4rem;
+    border: none;
+    border-radius: 14px;
+    background: var(--primary);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#abbrechen {
+    padding: 0.9rem 1.2rem;
+    border: none;
+    border-radius: 14px;
+    background: transparent;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+#fragePruefenServer {
+    padding: 0.9rem 1.4rem;
+    border: none;
+    border-radius: 14px;
+    background: var(--primary);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#abbrechenServer {
+    padding: 0.9rem 1.2rem;
+    border: none;
+    border-radius: 14px;
+    background: transparent;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+#abbrechenServerSeite {
+    padding: 0.9rem 1.2rem;
+    border: none;
+    border-radius: 14px;
+    background: transparent;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+#abbrechen:hover {
+    background: #f3f4f6;
+    color: var(--text);
+}
+
+#abbrechenServerSeite:hover {
+    background: #f3f4f6;
+    color: var(--text);
+}
+
+#abbrechenServer:hover {
+    background: #f3f4f6;
+    color: var(--text);
+}
+
+@media (max-width: 600px) {
+    .antwort-option {
+        font-size: 0.95rem;
+        line-height: 1.35;
+        padding: 0.85rem;
+    }
+
+    #frage,
+    #frageServer {
+        font-size: 1rem;
+    }
+    .quiz-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #fragePruefen,
+    #abbrechen {
+        width: 100%;
+    }
+}
+
+.antwort-option input[type="checkbox"] {
+    accent-color: var(--primary);
+}
+
+.server-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.secondary-button {
+    padding: 0.9rem 1.2rem;
+    border: 2px solid var(--primary);
+    border-radius: 14px;
+    background: white;
+    color: var(--text);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    background: var(--primary-light);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.statistik-box {
+    background: var(--primary-light);
+    border-radius: 14px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.highscore-form {
+    margin-top: 1rem;
+}
+
+#spielerName {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#spielerName:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.meldung {
+    min-height: 1.5rem;
+    margin: 0.8rem 0;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.highscore-bereich {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.highscore-bereich h2 {
+    text-align: center;
+}
+
+.highscore-eintrag {
+    display: grid;
+    grid-template-columns: 2rem 1fr auto;
+    gap: 0.75rem;
+    align-items: center;
+
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+}
+
+.highscore-rang {
+    font-weight: 800;
+    color: var(--primary-dark);
+}
+
+.highscore-name {
+    font-weight: 700;
+}
+
+.highscore-score {
+    font-weight: 800;
+}
+
+#user,
+#passwort {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+}

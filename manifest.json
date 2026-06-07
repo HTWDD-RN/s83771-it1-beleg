@@ -1,0 +1,21 @@
+{
+  "name": "Lernprogramm",
+  "short_name": "Quiz",
+  "description": "Webbasiertes Lernprogramm",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#facc15",
+  "background_color": "#facc15",
+  "icons": [
+    {
+      "src": "IconOhneHintergrund.png",
+      "sizes": "1254x1254",
+      "type": "image/png"
+    },
+    {
+      "src": "Icon.png",
+      "sizes": "1254x1254",
+      "type": "image/png"
+    }
+  ]
+}
